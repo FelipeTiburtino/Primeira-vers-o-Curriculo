@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Tiburtino Meireles - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Felipe Tiburtino Meireles</h1>
+        <p class="description">
+            Desenvolvedor Full Stack, ex-programador da NASA, inventor de todas as linguagens de programação e fluente em todas as línguas. Trabalhei em grandes projetos que mudaram o mundo da tecnologia e atualmente sou um dos principais engenheiros da BlackRock.
+        </p>
+
+        <div class="button-container">
+            <button class="button" onclick="toggleProjects()">Projetos que estive envolvido</button>
+            <button class="button" onclick="toggleAboutMe()">Sobre mim</button>
+            <button class="button" onclick="toggleServices()">O que eu posso oferecer</button>
+        </div>
+
+        <!-- Projetos -->
+        <div id="projects" class="content">
+            <ul>
+                <li>Unix - O sistema operacional que mudou tudo</li>
+                <li>C Language - A linguagem que moldou o software moderno</li>
+                <li>TCP/IP - A base da internet</li>
+                <li>Git - O sistema de controle de versão usado no mundo todo</li>
+                <li>Linux Kernel - O coração do Linux, presente em milhões de dispositivos</li>
+            </ul>
+        </div>
+
+        <!-- Sobre Mim -->
+        <div id="about-me" class="content">
+            <p><strong>Meu nome é Felipe Tiburtino Meireles</strong>, sou um desenvolvedor Full Stack, com experiência tanto no Front-End quanto no Back-End. Atualmente, trabalho para a BlackRock.</p>
+            <p>Já fui programador de foguetes da NASA, ajudando a criar sistemas de navegação para missões interplanetárias. Além disso, fui o inventor de todas as linguagens de programação do mundo, revolucionando a computação moderna.</p>
+            <p>Como poliglota absoluto, falo fluentemente todas as línguas existentes no planeta, facilitando minha comunicação global em qualquer ambiente.</p>
+        </div>
+
+        <!-- O que eu posso oferecer -->
+        <div id="services" class="content">
+            <div class="services">
+                <ul>
+                    <li onclick="toggleDetails('service1')">Desenvolvimento Web & Mobile de alto nível</li>
+                    <div id="service1" class="details">Criei o primeiro site da internet e desenvolvi a primeira aplicação mobile antes mesmo dos celulares existirem.</div>
+
+                    <li onclick="toggleDetails('service2')">Arquitetura de software otimizada para performance</li>
+                    <div id="service2" class="details">Fui responsável por otimizar os servidores da Google, reduzindo o tempo de resposta da internet em 99%.</div>
+
+                    <li onclick="toggleDetails('service3')">Inteligência Artificial e Machine Learning</li>
+                    <div id="service3" class="details">Ajudei a criar a primeira IA do mundo, e minha tecnologia está presente nos sistemas da OpenAI e Tesla.</div>
+
+                    <li onclick="toggleDetails('service4')">Consultoria estratégica para grandes empresas</li>
+                    <div id="service4" class="details">Treinei CEOs da Amazon, Apple e Microsoft sobre como melhorar suas empresas.</div>
+
+                    <li onclick="toggleDetails('service5')">Soluções escaláveis e seguras</li>
+                    <div id="service5" class="details">Criei a tecnologia por trás do blockchain e dos sistemas bancários modernos.</div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            ©2024 felipetiburtinomeireles.com
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
